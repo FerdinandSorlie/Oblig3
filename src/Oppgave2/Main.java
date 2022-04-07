@@ -1,14 +1,18 @@
 package Oppgave2;
 
 import java.util.Random;
+import java.util.function.Function;
 
 public class Main {
+  static long times;
+  static long gjennnomsnitt;
 
   public static void main(String[] args) {
+  
     //for å få en tilfeldig tall
     Random tilfeldig = new Random();
     //n = array størrelse, antal = hvor mye ganger skal vi kjøre test, rang maks tall brukt i testen
-    int n = 100, antal = 1, range = 100000;
+    int n = 32000, antal = 1000, range = 1;
     int[][] testTab = new int[antal][n];
     //føler test tabeler
     for (int i = 0; i < antal; i++) {
@@ -26,6 +30,8 @@ public class Main {
     //tidsmåling slutt
     long end = System.currentTimeMillis();
     System.out.println(end - start + "ms");
+
+    System.out.println(((double)(end - start)/antal) + " Gjennomsnitt");
 
   }
 

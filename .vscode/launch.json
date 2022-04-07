@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Oppgave2.Main",
+            "projectName": "Oblig3_542da792"
+        },
+        {
+            "type": "java",
             "name": "Launch Test2",
             "request": "launch",
             "mainClass": "Oppgave2.Test2",
